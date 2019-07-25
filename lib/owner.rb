@@ -1,6 +1,7 @@
-cclass Owner
-  # code goes here	  attr_accessor :pets, :name
-end 	  attr_reader :species
+class Owner
+	  
+  attr_accessor :pets, :name
+  attr_reader :species
 
    @@all = []
 
