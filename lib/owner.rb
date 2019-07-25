@@ -5,8 +5,6 @@ class Owner
   attr_accessor :name, :pets
   attr_reader :species
 
-  # Instance Methods #
-
   def initialize(species)
     @species = species
     @@all << self
@@ -16,8 +14,6 @@ class Owner
   def say_species
     return "I am a #{@species}."
   end
-
-  # Pets #
 
   def buy_fish(name_of_fish)
     @pets[:fishes] << Fish.new(name_of_fish)
@@ -76,8 +72,6 @@ class Owner
     num_fish = @pets[:fishes].size
     return "I have #{num_fish} fish, #{num_dogs} dog(s), and #{num_cats} cat(s)."
   end
-
-  # Class Methods #
 
   def self.all
     @@all
